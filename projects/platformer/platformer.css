@@ -1,0 +1,11 @@
+body {
+  margin: 0px;
+}
+
+canvas {
+  background-color: lightgray;
+}
+
+img {
+  display: none;
+}
