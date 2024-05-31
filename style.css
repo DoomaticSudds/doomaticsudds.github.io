@@ -57,8 +57,9 @@ main {
 
 /* portfolio styles */
 #interests {
-    border: 4px silver ridge;
+    border: 4px #282828 ridge;
     padding: 8px;
+    border-radius: 15px;
 }
 h2, h3 {
     margin: 0px;
@@ -113,6 +114,8 @@ h2, h3 {
     #all-contents {
       height: 100ch;
       margin: none;
+      border-radius: 25px;
+
     }
 
     a {
@@ -131,7 +134,7 @@ h2, h3 {
 
     p,
     li {
-      font-size: 24px;
+      font-size: 25px;
     }
 
     .content {
