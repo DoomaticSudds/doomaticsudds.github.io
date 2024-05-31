@@ -1,5 +1,5 @@
 body {
-    background: rgb(125, 198, 205);
+    background:#3c3836;
     color: rgb(45, 45, 45);
     padding: 10px;
     font-family: arial;
@@ -11,17 +11,18 @@ body {
 
 /* navigation menu */
 nav {
-    background: rgb(239, 80, 41);
-   margin: 0 auto;
+    background: #458588    ;
+   margin: 10 auto;
     display: flex;
-    padding: 10px;
+    padding: 25px;
+    border-radius: 0px;
 }
 h1 {
     display: flex;
     align-items: center;
     color: white;
     flex: 1;
-    margin: 0;
+    margin: 10;
 }
 #nav-ul {
     list-style-image: none;
@@ -46,6 +47,7 @@ main {
 }
 .sidebar-img {
     width: 200px;
+    border-radius: 10px;
 }
 .content {
     flex: 1;
