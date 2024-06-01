@@ -2,8 +2,14 @@ body {
     background:#3c3836;
     color: rgb(45, 45, 45);
     padding: 10px;
-    font-family: arial;
-}
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url("https://img.freepik.com/free-photo/anime-style-galaxy-background_23-2151134283.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  
+  }
+
+
 #all-contents {
   max-width: 800px;
     margin: auto;
@@ -12,11 +18,12 @@ body {
 /* navigation menu */
 nav {
     background: #7daea3    ;
-   margin: 10 auto;
+   margin: 24 auto;
     display: flex;
-    padding: 25px;
-    border-radius: 0px;
+    padding: 15px;
+    border-radius: 20px;
     margin-bottom: 20px;
+
 }
 h1 {
     display: flex;
@@ -31,6 +38,10 @@ h1 {
 .nav-li {
     display: inline-block;
     padding: 0 10px;
+    background-color: #3c3836;
+    padding: 10px;
+    border-radius: 10px;
+
 }
 a {
     text-decoration: none;
@@ -41,6 +52,8 @@ a {
 main {
     background: rgb(245, 238, 219);
     display: flex;
+    border-radius: 20px;
+
 }
 .sidebar {
     margin-right: 25px;
@@ -68,6 +81,11 @@ h2, h3 {
  /* portfolio styles */
  .content h1 {
     color: black;
+    background-color: #3c3836;
+    display: 0 flex;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
 }
 
 #portfolio {
@@ -76,14 +94,15 @@ h2, h3 {
 }
 
 #portfolio li {
-    background: #fff;
+    background: #e18e96;
+    color: white;
     padding: 10px;
     border-radius: 10px;
     margin-bottom: 10px;
 }
 
 #portfolio li:hover {
-    background: #eee;
+    background: #458588;
 }
 
 #portfolio a {
@@ -140,5 +159,6 @@ h2, h3 {
     .content {
       align-content: center;
       justify-content: center;
+      
     }
 }
