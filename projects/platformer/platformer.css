@@ -3,9 +3,11 @@ body {
 }
 
 canvas {
-  background-color: lightgray;
+  background-color: #ea6962;
+  background-image: url(https://mrwallpaper.com/images/hd/anime-night-sky-moon-n09frtgvldw1yrl0.jpg)
 }
 
 img {
   display: none;
 }
+
