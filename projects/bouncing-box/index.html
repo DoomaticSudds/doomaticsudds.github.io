@@ -15,7 +15,7 @@
 			display: block;
 			position: absolute;
 			top: 100px;
-			left: 450px;  /* <--- Change me! */
+			left: 300px;  /* <--- Change me! */
 		}
 		.board{
 			height: 100vh;
@@ -74,24 +74,8 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
-				positionX = positionX + 10;
+				positionX = positionX + speed;
 				moveBoxTo(positionX);
-
-				positionX = 10 + 10;         // positionX = 10
-				moveBoxTo(positionX);
-
-				// Frame 2
-				positionX = 20 + 10;         // positionX = 20
-				moveBoxTo(positionX);
-
-				// Frame 3
-				positionX = 30 + 10;         // positionX = 30
-				moveBoxTo(positionX);
-
-				// Frame 4
-				positionX = 40 + 10;         // positionX = 40
-				moveBoxTo(positionX);
-
 				
 
 			};
@@ -104,6 +88,8 @@
 			function handleBoxClick() {
 				postionX = 0;
 				changeBoxText(points);
+				speed = speed * 3;
+
 				
 
 
