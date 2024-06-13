@@ -5,6 +5,10 @@
 	<title>Bouncing Box</title>
 	<script src="jquery.min.js"></script>
 	<style>
+		body {background-image: url(../../eh.gif);
+		background-repeat: no-repeat;
+    	background-size: cover;
+		}
 		.box {
 			width: 70px;
 			height: 70px;
@@ -76,6 +80,16 @@
 				/* Your Code to Increase positionX by 10 HERE */
 				positionX = positionX + speed;
 				moveBoxTo(positionX);
+
+				if (positionX >= boardWidth) {
+					speed = -speed
+				}
+
+				if (positionX <= 0) {
+					speed = -speed
+				}
+				
+
 				
 
 			};
@@ -86,9 +100,10 @@
 			the left side of the screen.
 			*/
 			function handleBoxClick() {
-				postionX = 0;
+				positionX = 0;
+				points = points + 1
 				changeBoxText(points);
-				speed = speed * 3;
+				speed = speed + 3;
 
 				
 
