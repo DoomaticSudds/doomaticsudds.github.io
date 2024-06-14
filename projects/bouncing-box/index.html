@@ -71,10 +71,11 @@
 			var positionX = 0;
 			var points = 0;
 			var speed = 10;
-			var positionY;
-			var speedY;
+			var positionY = 0;
+			var speedY = 10;
+			var boardHeight = jQuery(window).height(); 
 			
-			/* 
+			/* var boardHeight = jQuery(window).height(); 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
 			turn it around! 
@@ -82,7 +83,9 @@
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
 				positionX = positionX + speed;
-				moveBoxTo(positionX);
+				positionY = positionY + speedY;
+
+				moveBoxTo(positionX, positionY);
 
 				if (positionX >= boardWidth) {
 					speed = -speed
@@ -90,6 +93,14 @@
 
 				if (positionX <= 0) {
 					speed = -speed
+				}
+				
+				if (positionY >= boardHeight) {
+					speedY = -speedY
+				}
+
+				if (positionY <= 0) {
+					speedY = -speedY
 				}
 				
 
@@ -106,7 +117,8 @@
 				positionX = 0;
 				points = points + 1
 				changeBoxText(points);
-				speed = speed + 3;
+				speed += 3;
+
 
 				
 
