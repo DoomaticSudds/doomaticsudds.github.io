@@ -70,11 +70,13 @@
 			
 			var positionX = 0;
 			var points = 0;
-			var speed = 10;
+			var speedX = 9;
 			var positionY = 0;
-			var speedY = 10;
+			var speedY = 9;
 			var boardHeight = jQuery(window).height(); 
-			
+			var randX = Math.random() * boardWidth
+			var randY = Math.random() * boardHeight
+						
 			/* var boardHeight = jQuery(window).height(); 
 			This Function will be called 20 times/second. Each time it is called,
 			it should move the Box to a new location. If the box drifts off the screen
@@ -82,24 +84,24 @@
 			*/
 			function update() {
 				/* Your Code to Increase positionX by 10 HERE */
-				positionX = positionX + speed;
+				positionX = positionX + speedX;
 				positionY = positionY + speedY;
 
 				moveBoxTo(positionX, positionY);
 
-				if (positionX >= boardWidth) {
-					speed = -speed
+				if (positionX > (boardWidth - 50)) {
+					speedX = -speedX
 				}
 
-				if (positionX <= 0) {
-					speed = -speed
+				if (positionX < 0) {
+					speedX = -speedX
 				}
 				
-				if (positionY >= boardHeight) {
+				if (positionY > (boardHeight - 50)) {
 					speedY = -speedY
 				}
 
-				if (positionY <= 0) {
+				if (positionY < 0) {
 					speedY = -speedY
 				}
 				
@@ -117,7 +119,22 @@
 				positionX = 0;
 				points = points + 1
 				changeBoxText(points);
-				speed += 3;
+				
+				if (speedX => 0){
+					speedX += 1.5;
+				}
+				else {
+					speedX -= 1.5;
+				}
+				if (speedY > 0){
+					speedY += 1.5;
+				}
+				else {
+					speedY -= 1.5;
+				}
+
+
+
 
 
 				
